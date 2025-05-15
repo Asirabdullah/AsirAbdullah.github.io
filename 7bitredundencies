@@ -59,7 +59,7 @@ plt.plot(p_values, h_no_error, label="No Error (7-bit)", color='purple')
 plt.plot(p_values, h_error, label="Error (7-bit)", color='brown')
 
 # Extra plot info
-plt.axvline(x=0.5, color='gray', linestyle='--', label="p = 0.5")
+plt.plot(p_values, p_values, color='gray', linestyle='--', label="p")
 plt.xlabel("p (Bit Error Probability)")
 plt.ylabel("Probability")
 plt.title("Error Probability for 3, 5, and 7-Bit Redundancy Codes")
@@ -67,3 +67,5 @@ plt.legend()
 plt.grid(True)
 plt.tight_layout()
 plt.show()
+
+
